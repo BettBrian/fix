@@ -11,8 +11,7 @@ def generate_launch_description():
 
 
     package_name='rover'
-    pkg_share = get_package_share_directory('rover')
-    world_file = os.path.join(pkg_share, 'world', 'world.sdf')
+    world_file = os.path.join(etg_package_share_directory('rover'), 'world', 'world.sdf')
 
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
