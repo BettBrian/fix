@@ -21,6 +21,11 @@
     <parent link="Base_link"/>
     <child link="Stand4_link"/>
   </joint>
+  <joint name="Camera_link_joint" type="fixed">
+    <origin rpy="-1.57060 -1.57057 -1.57099" xyz="0.08613 -0.00106 0.02623"/>
+    <parent link="Base_link"/>
+    <child link="Camera_link"/>
+  </joint>
   <joint name="Stand5_link_joint" type="fixed">
     <origin rpy="1.57103 0.00000 0.00000" xyz="0.03288 0.02499 0.02658"/>
     <parent link="Base_link"/>
@@ -312,6 +317,7 @@
       </geometry>
     </visual>
   </link>
+  <link name="Camera_link"/>
   <link name="BackRightMotor_link">
     <collision name="BackRightMotor_collision">
       <origin rpy="0.00000 0.00000 0.00000" xyz="-0.05000 0.00000 -0.00000"/>
